@@ -1,28 +1,63 @@
+
+
+
 .contenedornotas{
+    padding: 3rem;
+    margin-right: 2rem;
     border: 1px solid black;
-    width: 50%;
+    background-color: yellow;
+    width: 60%;
+    height: 18rem;
+}
+textarea {
+    
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: vertical;
+    overflow: auto;
+    margin: 1rem;
+}
+.cont2{
+    height: fit-content;
+    border: 1px solid black;
+    align-items: start;
     display: flex;
     flex-direction: column;
-    background-color: yellow;
-}
 
-.nuevaNota{
+
     
-    margin: 1rem;
-    padding: 1 rem;
+}
+.cont3{
+    height: fit-content;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    background-color: red;
+    margin: 5px;
+    width: 15rem;
+    border-radius: 3px;
+
+}
+.green{
+    background-color: green;
+    margin: 5px;
+    width: 15rem;
+    border-radius: 3px;
 }
 
-.botones{
-    border: 1px solid black;
+.card{
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
     margin: 1rem;
     padding: 1rem;
+    font-size: x-large;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-}
 
-input{
-    margin: 1rem;
-}
+    
+
+

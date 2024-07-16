@@ -1,10 +1,18 @@
-let tasaCambioUSD = 0.0561862; 
+
+let tasaCambioMXN = 17.8
 
         let cantidadInput = document.getElementById("cantidad");
         let resultadoP = document.getElementById("resultado");
 
         cantidadInput.addEventListener("keyup", () => {
-            let cantidadMXN = parseFloat(cantidadInput.value);
-            let cantidadUSD = (cantidadMXN * tasaCambioUSD).toFixed(2);
-            resultadoP.textContent = `${cantidadMXN} MXN equivale a ${cantidadUSD} USD`;
+            let cantidadUSD= parseFloat(cantidadInput.value);
+            let cantidadMXN = (cantidadUSD * tasaCambioMXN).toFixed(2);
+            resultadoP.textContent = `Cantidad en pesos MXN: ${cantidadMXN}`;
         });
+
+
+       
+
+        
+        
+        
