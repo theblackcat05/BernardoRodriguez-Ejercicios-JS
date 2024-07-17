@@ -24,9 +24,10 @@ let notas = [
             realizada: true,
         },
     ]
+let IdGlobal = [4]
 
-        function pintarTarjetas(idGlobal) {
-          let contenedor = document.getElementById("contenedorTarjetas")
+function pintarNotas(notas) {
+  let contenedor = document.getElementById("contenedorTarjetas")
           for (let i = 0; i < notas.length; i++) {
             
           let idGlobal = [4]
@@ -34,41 +35,29 @@ let notas = [
           
           tarjeta.className= "card"
 
-          tarjeta.innerHTML= `<input type="checkbox" name="realizadas" id="realizadas">
-        <div class="card-body">
-          <h5  class="card-title" text>Sacar la basura</h5>
-          <p class="card-text">si no saco la basura mi mama se va a enojar</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>`
+          tarjeta.innerHTML= `<input class="form-check-input mt-0" type="checkbox">
+            <h5 class="card-title">Sacar la basura</h5>
+            <p class="card-text">Mi mama me va a regañar si no lo hago.</p>
+          </div>
+          <button type="button" class="btn btn-danger">Borrar</button>`
 
         contenedor.appendChild(tarjeta)
+          }
+}
+pintarNotas(notas)
 
+ /*
+        function pintarNotas(notas) {
+          
           }  
     }
-    pintarTarjetas(notas.idGlobal)
+   
+    pintarTarjetas(notas)
 
-    /*
-    function pintarTarjetas(events) {
-
-      let contenedor = document.getElementById("contenedorTarjetas")
     
-      for (let i = 0; i < events.length; i++) {
-        let eventos = events[i]
-        let tarjeta = document.createElement('div')
-        
-        tarjeta.className = "card"
-    
-        tarjeta.innerHTML = `<div class="card size ">
-      <img src = ${eventos.image} class ="card-img-top h-50" alt=${eventos.category}>
-        <div class="card-body">
-          <h5 class="card-title">${eventos.name}
-          </h5><p class="card-text"> ${eventos.description} 
-          <a href="./details.html" class="btn btn-danger">Details</a>
-        </div >
-      </div > `
-        contenedor.appendChild(tarjeta)
-      }
-    }
-    pintarTarjetas(data.events)
-    */
-    
+    function addNote(title, text) {
+      idGlobal++;
+      let newNote = { id: idGlobal, title, text, realizada: false };
+      notes.push(newNote);
+      renderNotes();
+  }*/

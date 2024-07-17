@@ -9,6 +9,7 @@ let tasaCambioMXN = 17.8
             let cantidadMXN = (cantidadUSD * tasaCambioMXN).toFixed(2);
             resultadoP.textContent = `Cantidad en pesos MXN: ${cantidadMXN}`;
         });
+        
 
 
        
