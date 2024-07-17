@@ -30,7 +30,7 @@ function pintarNotas(notas) {
   let contenedor = document.getElementById("contenedorTarjetas")
           for (let i = 0; i < notas.length; i++) {
             
-          let idGlobal = [4]
+      
           let tarjeta = document.createElement('div')
           
           tarjeta.className= "card"
@@ -46,18 +46,15 @@ function pintarNotas(notas) {
 }
 pintarNotas(notas)
 
- /*
-        function pintarNotas(notas) {
-          
-          }  
-    }
-   
-    pintarTarjetas(notas)
+let lasNotas = []
 
-    
-    function addNote(title, text) {
-      idGlobal++;
-      let newNote = { id: idGlobal, title, text, realizada: false };
-      notes.push(newNote);
-      renderNotes();
-  }*/
+function notaNueva(titulo,texto) {
+  let agregarNota = {
+    titulo:titulo,
+    texto:texto
+  }
+  notas.push(agregarNota)
+}
+pintarNotas("compras","leche","pan")
+
+ 
